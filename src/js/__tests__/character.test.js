@@ -78,7 +78,7 @@ test('Go to the next level', () => {
 });
 
 test('New Bowman', () => {
-  const bowman = new Bowman('Fedr');
+  const bowman = new Bowman('Fedr', 'Bowman');
   expect(bowman).toEqual({
     name: 'Fedr',
     type: 'Bowman',
