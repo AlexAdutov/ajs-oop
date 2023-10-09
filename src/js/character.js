@@ -1,7 +1,7 @@
 const types = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
 
 export default class Character {
-  constructor(name, type, attack, defence) {
+  constructor(name, type) {
     if (typeof name === 'string' && name.length <= 10 && name.length >= 2) {
       this.name = name;
     } else {
@@ -16,8 +16,8 @@ export default class Character {
 
     this.health = 100;
     this.level = 1;
-    this.attack = attack;
-    this.defence = defence;
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
   levelUp() {
